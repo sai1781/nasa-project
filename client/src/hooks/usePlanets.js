@@ -9,6 +9,7 @@ function usePlanets() {
     const fetchedPlanets = await httpGetPlanets();
     savePlanets(fetchedPlanets);
     console.log(planets)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
